@@ -1,0 +1,338 @@
+body{
+    /* background-color: #e6f6ff; */
+    /*background-image:url(images/bends.jpg);*/
+    background-size:cover;
+    background-repeat:no-repeat; 
+
+}
+
+#hero{
+    font-weight: lighter;
+    font-style: italic;
+}
+
+
+
+/* section{
+    display:block;
+}
+.container{   
+    Set width of container to
+        1200px and align center 
+    margin: 0px auto;
+    width: 1200px;
+} */
+nav{
+    padding:0 30px;
+    box-sizing: border-box;
+}
+nav,nav div{
+    display:flex;
+    justify-content:space-between;
+    height:75px;
+    align-items:center;
+}
+nav img{
+    width:30px;
+    height:30px;
+}
+nav div{
+    width: 200px;
+}
+nav a{
+    /*background-color: blueviolet;*/
+    font-size: 1.5rem;
+    text-decoration:none;
+}
+
+/* #menu{
+    float:right;
+    width: 70%;
+    height: 100%;
+    margin: none;
+}
+
+#menu ul{
+    text-align: center;
+    float:right;
+    margin: none;
+    background: #0074D9;
+}
+
+#menu li{
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+
+#menu li a{
+    color: #fff;
+}
+
+#menu li:hover a, #menu li span{
+    background: #FFF;
+    color: #0074D9;
+    border-left: 1px solid #0074D9;
+    text-decoration: none;
+} */
+h1{
+    font-size:45px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+#hero{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:30px 100px;
+}
+#hero img{
+    width:500px;
+    height:400px;
+    /* background:red; */
+}
+p{
+    width:300px;
+    margin:20px auto;
+  }
+@media(max-width:950px){
+    #hero img{
+        width:400px;
+        height:300px;  
+    }
+    #hero{
+        padding:15px 5px; 
+    }
+}
+@media(max-width:763px){
+    #hero{
+        flex-direction:column-reverse;
+    }
+    #hero img{
+        width:350px;
+        height:200px;
+    }
+    #hero{
+        justify-content: center;
+        align-items:center;
+    }
+    #hero div{
+        text-align:center;
+    }
+}
+
+/* created after that data has been collected */
+
+
+.button{
+    /* background:linear-gradient(to right , green,aquamarine); */
+    /* background-color: green; */
+    border:none;
+    color:rgb(250, 246, 246);
+    padding:15px 32px;
+    text-align:center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:16px;
+    border-radius: 1.5em;
+}
+
+.button{
+        background-image: repeating-linear-gradient(-45deg, 
+          #7BDFF2 10px 30px,
+          #B2F7EF 30px 50px,
+          #EFF7F6 50px 70px,
+          #F7D6E0 70px 90px,
+          #F2B5D4 90px 110px
+      );
+      color: black;
+    }
+    
+.button:hover {
+      background-position: 20% center;
+}
+
+
+/*footer h3{
+    /*text-align: center;
+    justify-content: center;
+}
+
+h3{
+    text-align: center;
+    border: yellowgreen;
+    margin: 4em;
+}*/
+
+/* footer{  
+    /*margin-top: auto;
+    justify-content: center;
+    text-decoration: none;
+    position: absolute;
+    /* top: 80px; 
+    left: 0;
+    bottom:1em;
+    right: 10px;
+    width: 100%;
+    background-color: aquamarine;
+    color: white;
+    text-align: center;
+    float: center;
+    align-items: flex-center;
+    box-sizing: border-box;
+  }  */
+
+  footer{
+    position: inherit;
+    /* padding: 10px 10px 0px 10px; */
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/ 
+    height: 100px;
+    /* background: aquamarine; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    display:grid;
+    place-items:center;
+  }
+
+/* footer{
+    justify-content: center;
+    position: relative;
+ }*/
+
+footer img{
+    width:30px;
+    height:30px;
+}
+
+@media(max-width:270px){
+    footer{
+        position: inherit;
+        flex-direction: column-reverse; 
+        /* top: 48em; */
+        width: auto; 
+        height: auto;
+        right: fit-content;
+        justify-content: space-between;
+        display: inline-block;  
+         box-sizing: border-box;
+    }
+}
+
+@media(max-width:320px){ 
+    footer{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        display: inline-block;
+    }
+}
+
+a:hover {
+    transform: translateY(-2px);
+    opacity: 0.7;
+}
+
+footer a{
+    padding:20px;
+    font-size:30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+/* css for project file ------------------------------------------INdividual port-------------------------------------------------*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main p{
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Cormorant SC', serif;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+/* #pro{ 
+    display: flex;
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    -webkit-backdrop-filter:blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32 px 0 rgba(0,0,0,0.37);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 32px;
+    text-align: center;
+    justify-content: center;
+}*/
+
+.sec{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+    padding:5px;
+    box-sizing: border-box;
+}
+
+
+.pro img{
+ /* background-color: red; */
+    width: 20em;
+    height: 15em;
+    padding-top: 1em;
+}
+
+.pro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content; 
+    border-width: 0;
+    background-color: antiquewhite;
+    box-shadow: 5px 5px 5px 1px grey;
+    padding:10px;
+    box-sizing: border-box;
+    height: 600px;
+    width:350px;
+    border-radius: 1em;
+}
+.b2{
+    /*background-color: #4CAF50;*/
+    background:linear-gradient(to right , violet,purple);
+    position:flex;
+    border:none;
+    color:rgb(250, 246, 246);
+    padding:15px 32px;
+    text-align:center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:16px;
+    border-radius: 1em;
+    /* text-decoration: none; */
+}
+
+@media(max-width:240px){
+    .pro{
+        /* height:inherit; */
+        width: 60%;
+    }
+}
+
+.pro a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
