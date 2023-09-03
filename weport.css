@@ -3,6 +3,7 @@ body{
     /*background-image:url(images/bends.jpg);*/
     background-size:cover;
     background-repeat:no-repeat; 
+    /* background-image: url(images/back.jpg); */
 
 }
 
@@ -12,16 +13,6 @@ body{
 }
 
 
-
-/* section{
-    display:block;
-}
-.container{   
-    Set width of container to
-        1200px and align center 
-    margin: 0px auto;
-    width: 1200px;
-} */
 nav{
     padding:0 30px;
     box-sizing: border-box;
@@ -35,6 +26,7 @@ nav,nav div{
 nav img{
     width:30px;
     height:30px;
+    mix-blend-mode: multiply;
 }
 nav div{
     width: 200px;
@@ -43,6 +35,7 @@ nav a{
     /*background-color: blueviolet;*/
     font-size: 1.5rem;
     text-decoration:none;
+    color:black;
 }
 
 /* #menu{
@@ -93,6 +86,7 @@ h1{
     width:500px;
     height:400px;
     /* background:red; */
+    mix-blend-mode: multiply; /* Changed the image to blend mode */
 }
 p{
     width:300px;
@@ -102,6 +96,7 @@ p{
     #hero img{
         width:400px;
         height:300px;  
+        mix-blend-mode: multiply; /* Changed the blend mode v1*/
     }
     #hero{
         padding:15px 5px; 
@@ -114,6 +109,7 @@ p{
     #hero img{
         width:350px;
         height:200px;
+        mix-blend-mode: multiply;
     }
     #hero{
         justify-content: center;
@@ -206,8 +202,8 @@ h3{
  }*/
 
 footer img{
-    width:30px;
-    height:30px;
+    width:40px;
+    height:40px;
 }
 
 @media(max-width:270px){
@@ -235,7 +231,12 @@ footer img{
 
 a:hover {
     transform: translateY(-2px);
-    opacity: 0.7;
+    color: red;
+    background-color: #50A3A4;
+    border-radius: 5px;
+    width: initial;
+    height: 30px;
+    opacity: 0.9;
 }
 
 footer a{
