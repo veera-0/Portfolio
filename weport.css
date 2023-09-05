@@ -46,25 +46,7 @@ nav a{
     margin: none;
 }
 
-#menu ul{
-    text-align: center;
-    float:right;
-    margin: none;
-    background: #0074D9;
-}
 
-#menu li{
-    display: inline-block;
-    padding: 0em 1.5em;
-    text-decoration: none;
-    font-weight: 500;
-    text-transform: uppercase;
-    line-height: 60px;
-}
-
-#menu li a{
-    color: #fff;
-}
 
 #menu li:hover a, #menu li span{
     background: #FFF;
@@ -153,34 +135,9 @@ p{
 }
 
 
-/*footer h3{
-    /*text-align: center;
-    justify-content: center;
-}
 
-h3{
-    text-align: center;
-    border: yellowgreen;
-    margin: 4em;
-}*/
 
-/* footer{  
-    /*margin-top: auto;
-    justify-content: center;
-    text-decoration: none;
-    position: absolute;
-    /* top: 80px; 
-    left: 0;
-    bottom:1em;
-    right: 10px;
-    width: 100%;
-    background-color: aquamarine;
-    color: white;
-    text-align: center;
-    float: center;
-    align-items: flex-center;
-    box-sizing: border-box;
-  }  */
+
 
   footer{
     position: inherit;
@@ -189,29 +146,21 @@ h3{
     width: 100%;
     /* Height of the footer*/ 
     height: 100px;
-    /* background: aquamarine; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* text-align: center; */
     display:grid;
     place-items:center;
   }
 
-/* footer{
-    justify-content: center;
-    position: relative;
- }*/
+
 
 footer img{
-    width:40px;
-    height:40px;
+    max-width:30px;
+    max-height:30px;
 }
 
 @media(max-width:270px){
     footer{
         position: inherit;
         flex-direction: column-reverse; 
-        /* top: 48em; */
         width: auto; 
         height: auto;
         right: fit-content;
@@ -221,18 +170,21 @@ footer img{
     }
 }
 
-@media(max-width:320px){ 
+@media(max-width:325px){ 
     footer{
         display:flex;
         flex-direction: row;
         justify-content: center;
         display: inline-block;
     }
+    footer a{
+        padding:10px;
+    }
 }
 
-a:hover {
+nav a:hover {
     transform: translateY(-2px);
-    color: red;
+    color: green;
     background-color: #50A3A4;
     border-radius: 5px;
     width: initial;
@@ -248,6 +200,7 @@ footer a{
     text-decoration: none;
     margin: 5px 2px;
 }
+
 
 /* css for project file ------------------------------------------INdividual port-------------------------------------------------*/
 
@@ -265,17 +218,7 @@ main p{
     font-family: 'Edu VIC WA NT Beginner', cursive;
 }
 
-/* #pro{ 
-    display: flex;
-    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
-    -webkit-backdrop-filter:blur(20px);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 8px 32 px 0 rgba(0,0,0,0.37);
-    border: 1px solid rgba(255,255,255,0.18);
-    border-radius: 32px;
-    text-align: center;
-    justify-content: center;
-}*/
+
 
 .sec{
     display: flex;
