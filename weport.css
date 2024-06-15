@@ -39,21 +39,6 @@ nav a{
     color:black;
 }
 
-/* #menu{
-    float:right;
-    width: 70%;
-    height: 100%;
-    margin: none;
-}
-
-
-
-#menu li:hover a, #menu li span{
-    background: #FFF;
-    color: #0074D9;
-    border-left: 1px solid #0074D9;
-    text-decoration: none;
-} */
 h1{
     font-size:45px;
     font-family: 'Edu VIC WA NT Beginner', cursive;
@@ -68,7 +53,6 @@ h1{
 #hero img{
     width:500px;
     height:400px;
-    /* background:red; */
     mix-blend-mode: multiply; /* Changed the image to blend mode */
 }
 p{
@@ -107,8 +91,6 @@ p{
 
 
 .button{
-    /* background:linear-gradient(to right , green,aquamarine); */
-    /* background-color: green; */
     border:none;
     color:rgb(250, 246, 246);
     padding:15px 32px;
@@ -134,14 +116,8 @@ p{
       background-position: 20% center;
 }
 
-
-
-
-
-
   footer{
     position: inherit;
-    /* padding: 10px 10px 0px 10px; */
     bottom: 0;
     width: 100%;
     /* Height of the footer*/ 
@@ -207,7 +183,7 @@ footer a{
 main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -229,12 +205,11 @@ main p{
     box-sizing: border-box;
 }
 
-
 .pro img{
- /* background-color: red; */
     width: 20em;
     height: 15em;
     padding-top: 1em;
+    object-fit: cover;
 }
 
 .pro{
@@ -252,8 +227,8 @@ main p{
     width:350px;
     border-radius: 1em;
 }
+
 .b2{
-    /*background-color: #4CAF50;*/
     background:linear-gradient(to right , violet,purple);
     position:flex;
     border:none;
@@ -263,13 +238,13 @@ main p{
     text-decoration: none;
     display: inline-block;
     font-size:16px;
+    width: max-content;
     border-radius: 1em;
-    /* text-decoration: none; */
+
 }
 
 @media(max-width:240px){
     .pro{
-        /* height:inherit; */
         width: 60%;
     }
 }
@@ -280,4 +255,54 @@ main p{
 }
 
 
+        .sec:hover {
+            transform: translateY(-5px);
+        }
+        .pro {
+            text-align: center;
+        }
+        .pro img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .pro h5 {
+            color: #955251;
+            font-size: 1.3em;
+            margin: 10px 0;
+        }
+        
+        .b2:hover {
+            background: linear-gradient(to right, purple, violet);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 100px;
+            padding: 10px;
+        }
+        @media (min-width: 576px) {
+            .grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (min-width: 325px) {
+            .grid {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+        }
+
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
+        @media (min-width: 826px) {
+            .grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
 
