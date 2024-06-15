@@ -11,60 +11,82 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;500&family=Edu+VIC+WA+NT+Beginner:wght@600&display=swap" rel="stylesheet">
     <style>
-        body{
+        body {
             background-color: azure;
         }
-        .tech{
+        .tech {
             font-family: bold;
-            text-align:left;
-            background-color:aqua;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            padding:0px 20px 0px 20px ;
+            text-align: left;
+            background-color: aqua;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0 20px;
         }
     </style>
 </head>
 <body oncontextmenu="return false">
     <header>
-        <!--Header logo -->
-        
         <nav>
-          <img src="images/icon.jpg" alt="logo">
+            <img src="images/icon.jpg" alt="logo">
             <div>
-              <a href="index.html">Home</a>
-              <!--a href="">About</a-->
-              <a href="Project.html">Projects</a>
+                <a href="index.html">Home</a>
+                <a href="Project.html">Projects</a>
             </div>
         </nav>
     </header>
     <main>
-        <p style="text-decoration: underline;">Project</p><hr>
-        <section class="sec" style="background-color:white;">
-            <div class="pro">
-                <img src="images/bends.jpg" alt="image">
-                <h5 style="color:#955251;font-size: 1.3em;"><span style="color:black;">Project Title</span> : Capillus pin bends</h5>
-                <p class="tech"> IOT | Arduino </p>
-                <p>This project is developed to reduce the accidents in hilly areas</p>
-                <button class="b2"><a href="https://github.com/Devil-Hacker2/Capillus-pin-bends">View code</a></button>
-            </div>
-        </section>
+        <p style="text-decoration: underline;">Project</p>
+        <hr>
+        <div class="grid">
+            <section class="sec">
+                <div class="pro">
+                    <img src="images/bends.jpg" alt="image">
+                    <h5><span>Project Title</span>: Capillus pin bends</h5>
+                    <p class="tech">IOT | Arduino</p>
+                    <p>This project is developed to reduce the accidents in hilly areas</p>
+                    <button class="b2"><a href="https://github.com/veera-0/Capillus-pin-bends">View code</a></button>
+                </div>
+            </section>
+
+            <section class="sec">
+                <div class="pro">
+                    <img src="images/calc.png" alt="image">
+                    <h5><span>Project Title</span>: Calculator app</h5>
+                    <p class="tech">ReactJs</p>
+                    <p>This application was built using ReactJs for basic calculation</p>
+                    <button class="b2"><a href="https://github.com/veera-0/CalculatorApp">View code</a></button>
+                </div>
+            </section>
+
+            <section class="sec">
+                <div class="pro">
+                    <img src="images/petstore.jpg" alt="image">
+                    <h5><span>Project Title</span>: Pet Store</h5>
+                    <p class="tech">SQL | Springboot</p>
+                    <p>This application was built using springboot framework with sql database for CRUD operations</p>
+                    <button class="b2"><a href="https://github.com/veera-0/Springboot-application">View code</a></button>
+                </div>
+            </section>
+
+            <section class="sec">
+                <div class="pro">
+                    <img src="images/seat.jpg" alt="image">
+                    <h5><span>Project Title</span>: Seat Booking System</h5>
+                    <p class="tech">HTML | CSS | PHP | SQL</p>
+                    <p>This is web application used to book seating for a hall. It was Built using PHP for storin & retrieving.</p>
+                    <button class="b2"><a href="https://github.com/veera-0/Springboot-application">View code</a></button>
+                </div>
+            </section>
+        </div>  
     </main>
-    <!--section id="psection">
-        <hm--TODO: Add the projects-
-        <p>PROJECTS</p>
-        <div id="pro">
-            <p>This is my forst project</p>
-            <img src="icon.jpg">
-        </div>
-    </section-->
     <footer>
-        <h3 style="color:black">Contact Info</h3>
+        <h3>Contact Info</h3>
         <div>
-          <a href="https://www.linkedin.com/in/anjaneyulu-velpuri/" target="_blank"><img src="images/icons8-linkedin-48.png" alt="linkedin"></a>
-        <a href="mailto: velpurianji2002@gmail.com" target="_blank"><img src="images/icons8-gmail-48.png" alt="gmail"></a>
-        <a href="https://github.com/Devil-Hacker2" target="_blank"><img src="images/icons8-github-50.png" alt="github"></a>
-        <a href="https://www.hackerrank.com/CSE_19JR1A05I8" target="_blank"><img src="images/hackerank.png" alt="hackerank"></a>
+            <a href="https://www.linkedin.com/in/anjaneyulu-velpuri/" target="_blank"><img src="images/icons8-linkedin-48.png" alt="LinkedIn"></a>
+            <a href="mailto: velpurianji2002@gmail.com" target="_blank"><img src="images/icons8-gmail-48.png" alt="Gmail"></a>
+            <a href="https://github.com/Devil-Hacker2" target="_blank"><img src="images/icons8-github-50.png" alt="GitHub"></a>
+            <a href="https://www.hackerrank.com/CSE_19JR1A05I8" target="_blank"><img src="images/hackerank.png" alt="HackerRank"></a>
         </div>
-      </footer> 
+    </footer> 
 </body>
 </html>
